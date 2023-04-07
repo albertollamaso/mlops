@@ -1,0 +1,80 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<! - - - Include the above in your HEAD tag - - - - →
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container">
+<style>
+/* Style the body */
+body {
+ font-family: Arial;
+ margin: 0;
+}
+/* Header/Logo Title */
+.header {
+ padding: 60px;
+ text-align: center;
+ background: orange;
+ color: white;
+ font-size: 30px;
+}
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+<div class="header">
+ <h1>Spam Detector</h1>
+ <p style="font-family: cursive;">98.7444% Accuracy NaiveBayes Classifier</p>
+</div>
+<br/>
+<style>
+input[type=text], select {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+input[type=submit] {
+ width: 30%;
+ justify-content: center;
+ background-color: orange;
+ color: white;
+ padding: 10px 20px;
+ margin: 8px 0;
+ border: none;
+ border-radius: 15px 0 15px 0;
+ cursor: pointer;
+}
+input[type=submit]:hover {
+ background-color: #45a049;
+ 
+}
+div {
+ border-radius: 5px;
+ background-color: lightgrey;
+ padding: 20px;
+}
+</style>
+<div>
+ <form action="/" method = "post">
+ <label for="fname" style="font-family: cursive;">Message</label>
+ <input type="text" name = "sms" id="fname" name="firstname" placeholder="type message here ..">
+ <br><br> 
+ <div style="text-align:center;">
+ <input type="submit" value="classify">
+ </div>
+ </form>
+</div>
+</body>
+<! - - - -let's go and get that son of a b**** - - ->
+<div>
+ <span style="color:red; font-family: cursive;font-size: 20px"><i>{{prediction}}</i></span>
+</div>
+</html>
