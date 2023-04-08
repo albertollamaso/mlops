@@ -3,7 +3,7 @@
 
 Before deploying a machine learning model, we need…a machine learning model. In this case, a state-of-the-art model has been built using scikit-learn to address the task of SMS Spam Filtering, which is available in this repository.
 
-The [SMS Ham-Spam detection dataset](.SMSSpamCollection) is a collection of tagged SMS messages that have been gathered for SMS Spam research. It consists of a set of 5,574 SMS messages in English, including both training and testing data. The tagging standard was defined as `ham` (legitimate) or `spam`.
+The [SMS Ham-Spam detection dataset](SMSSpamCollection) is a collection of tagged SMS messages that have been gathered for SMS Spam research. It consists of a set of 5,574 SMS messages in English, including both training and testing data. The tagging standard was defined as `ham` (legitimate) or `spam`.
 
 The `train` and `test` files are formatted using the standard of one message per line. Each line is composed by two columns: one with label (`ham` or `spam`) and other with the raw text. Here are some examples:
 
